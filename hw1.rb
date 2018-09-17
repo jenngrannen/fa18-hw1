@@ -49,4 +49,5 @@ def scrabble(word)
     z: 10,
   }
   # Q5 CODE HERE
+  word.chars.map{ |x| x = values[x.to_sym]}.inject(0){|sum,x| sum + x }
 end
